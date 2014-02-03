@@ -466,6 +466,19 @@
                     return false;
                 });
 
+                $('#lnkProfesor').unbind('click');
+                $('#lnkProfesor').click(function() {
+                    var profesor = objeto('profesor', '<%=request.getContextPath()%>');
+                    var profesorView = vista(profesor, '<%=request.getContextPath()%>');
+
+                    $('#indexContenidoJsp').empty();
+                    $('#indexContenido').empty().append(profesorView.getEmptyList());
+
+                    var profesorControl = control_profesor_list('<%=request.getContextPath()%>');
+                    profesorControl.inicia(profesorView, 1, null, null, 10, null, null, null, null);
+                    return false;
+                });
+
             });
 
         </script>
