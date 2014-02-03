@@ -131,6 +131,7 @@
         <script src="js/control/incidencias.js" charset="UTF-8"></script>
         <script src="js/control/requerimiento.js" charset="UTF-8"></script>
         <script src="js/control/profesor.js" charset="UTF-8"></script>
+        <script src="js/control/backlog.js" charset="UTF-8"></script>
 
         <script>
 
@@ -437,6 +438,31 @@
 
                     var requerimientoControl = control_requerimiento_list('<%=request.getContextPath()%>');
                     requerimientoControl.inicia(requerimientoView, 1, null, null, 10, null, null, null, null);
+                    return false;
+                });
+                $('#lnkBacklog').unbind('click');
+                $('#lnkBacklog').click(function() {
+                    var backlog = objeto('backlog', '<%=request.getContextPath()%>');
+                    var backlogView = vista(backlog, '<%=request.getContextPath()%>');
+
+                    $('#indexContenidoJsp').empty();
+                    $('#indexContenido').empty().append(backlogView.getEmptyList());
+
+                    var backlogControl = control_backlog_list('<%=request.getContextPath()%>');
+                    backlogControl.inicia(backlogView, 1, null, null, 10, null, null, null, null);
+                    return false;
+                });
+
+                $('#lnkProfesor').unbind('click');
+                $('#lnkProfesor').click(function() {
+                    var profesor = objeto('profesor', '<%=request.getContextPath()%>');
+                    var profesorView = vista(profesor, '<%=request.getContextPath()%>');
+
+                    $('#indexContenidoJsp').empty();
+                    $('#indexContenido').empty().append(profesorView.getEmptyList());
+
+                    var profesorControl = control_profesor_list('<%=request.getContextPath()%>');
+                    profesorControl.inicia(profesorView, 1, null, null, 10, null, null, null, null);
                     return false;
                 });
 
