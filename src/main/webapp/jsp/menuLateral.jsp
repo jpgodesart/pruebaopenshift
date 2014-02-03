@@ -32,6 +32,7 @@
         <li><a id="lnkFollower" href="#">Follower</a></li>
         <li><a id="lnkRequerimiento" href="#">Requerimiento</a></li>
         <li><a id="lnkIncidencias" href="#">Incidencias</a></li>
+        <li><a id="lnkProfesor" href="#">Profesor</a></li>
         <li><a id="lnkBacklog" href="#">Backlog</a></li>
     </ul>
 </div>
