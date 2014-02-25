@@ -18,13 +18,6 @@
         </div>
     </div>
     <div class="control-group">
-        <label class="control-label"  for="inputDni">DNI:</label>
-        <div class="controls">
-            <input type="text" id="dni" name="dni" size="15" placeholder="Documento identidad" />
-        </div>
-    </div>
-
-    <div class="control-group">
         <label class="control-label"  for="inputNombre">Nombre:</label>
         <div class="controls">
             <input type="text" id="nombre" name="nombre" size="15" placeholder="Nombre" />
@@ -40,22 +33,6 @@
         <label class="control-label"  for="inputApe2">Segundo Apellido:</label>
         <div class="controls">
             <input type="text" id="ape2" name="ape2" size="15" placeholder="Segundo Apellido" />
-        </div>
-    </div>
-    <div class="control-group">
-        <label class="control-label"  for="inputSexo">Sexo:</label>
-        <div class="controls">
-            <select id="sexo" name="sexo" type="text" autofocus="autofocus">
-                <option value="">Seleccione una opción...</option>
-                <option value="Hombre">Hombre</option>
-                <option value="Mujer">Mujer</option>
-            </select>
-        </div>
-    </div>
-    <div class="control-group">
-        <label class="control-label"  for="inputTelefono">Teléfono:</label>
-        <div class="controls">
-            <input type="text" id="telefono" name="telefono" size="15" placeholder="Móvil o fijo" />
         </div>
     </div>
     <div class="control-group">

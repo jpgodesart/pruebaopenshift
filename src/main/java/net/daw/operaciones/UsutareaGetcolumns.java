@@ -5,25 +5,33 @@
  */
 package net.daw.operaciones;
 
+import com.google.gson.Gson;
+import java.util.ArrayList;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import net.daw.dao.UsutareaDao;
+import net.daw.helper.Conexion;
 
 
 /**
  *
  * @author rafa
  */
-public class AlumnoGetprettycolumns implements GenericOperation {
+public class UsutareaGetcolumns implements GenericOperation {
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws Exception {
+        ArrayList<String> alColumns = null;
         try {
-            String data = "{\"data\": [\"ID\", \"ID Usuario\", \"Nombre\", \"P. Ape\", "
-                    + "\"S. Ape\", \"Em@il\"]}";
+            UsutareaDao oUsutareaDAO = new UsutareaDao(Conexion.getConection());
+            alColumns = oUsutareaDAO.getColumnsNames();
+            String data = new Gson().toJson(alColumns);
+            data = "{\"data\":" + data + "}";
             return data;
         } catch (Exception e) {
-            throw new ServletException("AlumnoGetpagesJson: View Error: " + e.getMessage());
+            throw new ServletException("UsutareaGetcolumnsJson: View Error: " + e.getMessage());
         }
     }
+
 }

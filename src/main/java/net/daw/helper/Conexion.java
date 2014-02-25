@@ -17,12 +17,12 @@ public class Conexion {
         DriverManager
     };
 
-    public static Tipo_conexion getConection() {
-        return Tipo_conexion.DataSource;
+    public static Conexion.Tipo_conexion getConection() {
+        return Conexion.Tipo_conexion.DataSource;
     }
 
     public static String getDatabaseName() {
-        return "ausiasyield";
+        return "gestiontareas";
     }
 
     public static String getDatabaseLogin() {

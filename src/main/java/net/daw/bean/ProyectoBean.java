@@ -4,22 +4,28 @@
  */
 package net.daw.bean;
 
+import java.util.Date;
 
-public class EstadoBean {
+/**
+ *
+ * @author al037914
+ */
+public class ProyectoBean {
     
     private Integer id = 0;
-    private String nombre = "";
+    private String nombre ="";
+    private String descripcion = "";
     
-    
-     public EstadoBean() {
-    }
 
-    public EstadoBean(Integer id) {
+    public ProyectoBean() {
+    
+    }
+    
+    public ProyectoBean(Integer id) {
         this.id = id;
     }
 
-   
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
@@ -33,6 +39,16 @@ public class EstadoBean {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
-    }  
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    
     
 }

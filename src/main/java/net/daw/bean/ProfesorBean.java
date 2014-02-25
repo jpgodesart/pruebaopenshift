@@ -16,10 +16,8 @@ public class ProfesorBean {
     private String nombre = "";
     private String ape1 = "";
     private String ape2 = "";
-    private String sexo = "";
-    private String telefono = "";
     private String email = "";
-    private String dni = "";
+
 
     public ProfesorBean() {
     }
@@ -99,34 +97,6 @@ public class ProfesorBean {
     }
 
     /**
-     * @return the sexo
-     */
-    public String getSexo() {
-        return sexo;
-    }
-
-    /**
-     * @param sexo the sexo to set
-     */
-    public void setSexo(String sexo) {
-        this.sexo = sexo;
-    }
-
-    /**
-     * @return the telefono
-     */
-    public String getTelefono() {
-        return telefono;
-    }
-
-    /**
-     * @param telefono the telefono to set
-     */
-    public void setTelefono(String telefono) {
-        this.telefono = telefono;
-    }
-
-    /**
      * @return the email
      */
     public String getEmail() {
@@ -140,18 +110,5 @@ public class ProfesorBean {
         this.email = email;
     }
 
-    /**
-     * @return the dni
-     */
-    public String getDni() {
-        return dni;
-    }
-
-    /**
-     * @param dni the dni to set
-     */
-    public void setDni(String dni) {
-        this.dni = dni;
-    }
 
 }

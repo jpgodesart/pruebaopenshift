@@ -12,18 +12,17 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author rafa
+ * @author al037684
  */
-public class AlumnoGetprettycolumns implements GenericOperation {
+public class TareaGetprettycolumns implements GenericOperation {
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws Exception {
         try {
-            String data = "{\"data\": [\"ID\", \"ID Usuario\", \"Nombre\", \"P. Ape\", "
-                    + "\"S. Ape\", \"Em@il\"]}";
+            String data = "{\"data\": [\"id\", \"nombre\", \"descripcion\", \"id_estado\", \"id_proyecto\"]}";
             return data;
         } catch (Exception e) {
-            throw new ServletException("AlumnoGetpagesJson: View Error: " + e.getMessage());
+            throw new ServletException("TareaGetprettycolumnsJson: View Error: " + e.getMessage());
         }
     }
 }
