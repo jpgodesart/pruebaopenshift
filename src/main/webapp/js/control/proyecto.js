@@ -138,6 +138,21 @@ var control_proyecto_list = function(path) {
             loadForm('#modal02', cabecera, "Código: " + resultado["status"] + "<br />" + resultado["message"] + "<br />", pie, true);
         });
     }
+    
+        function cargaTareas(id) {
+
+        var tarea = objeto('tarea', path);
+        var tareaView = vista(tarea, path);
+
+        $('#indexContenidoJsp').empty();
+        $('#indexContenido').empty().append(tareaView.getEmptyList());
+
+        var tareaControl = control_tarea_list(path);
+        tareaControl.inicia(tareaView, 1, null, null, 10, null, null, null, null, "id_proyecto", "equals", id);
+        return false;
+
+    }
+    
 
     function loadModalView(view, place, id) {
         cabecera = "<button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-hidden=\"true\">×</button>" +
@@ -164,9 +179,9 @@ var control_proyecto_list = function(path) {
             //muestra el listado principal
 
             if (callback) {
-                $(prefijo_div + "#datos").empty().append(view.getLoading()).html(view.getPageTable(pag, order, ordervalue, rpp, filter, filteroperator, filtervalue, systemfilter, systemfilteroperator, systemfiltervalue, cargaBotoneraBuscando()));
+                $(prefijo_div + "#datos").empty().append(view.getLoading()).html(view.getPageTableProy(pag, order, ordervalue, rpp, filter, filteroperator, filtervalue, systemfilter, systemfilteroperator, systemfiltervalue, cargaBotoneraBuscando()));
             } else {
-                $(prefijo_div + "#datos").empty().append(view.getLoading()).html(view.getPageTable(pag, order, ordervalue, rpp, filter, filteroperator, filtervalue, systemfilter, systemfilteroperator, systemfiltervalue, cargaBotoneraMantenimiento()));
+                $(prefijo_div + "#datos").empty().append(view.getLoading()).html(view.getPageTableProy(pag, order, ordervalue, rpp, filter, filteroperator, filtervalue, systemfilter, systemfilteroperator, systemfiltervalue, cargaBotoneraMantenimiento()));
             }
 
             //muestra la frase con el número de registros de la consulta
@@ -204,6 +219,12 @@ var control_proyecto_list = function(path) {
                 $(prefijo_div + '.btn.btn-mini.action04').unbind('click');
                 $(prefijo_div + '.btn.btn-mini.action04').click(function() {
                     removeConfirmationModalForm(view, '#modal01', $(this).attr('id'));
+                });
+                
+                $(prefijo_div + '#proyectos').unbind('click');
+                $(prefijo_div + '#proyectos').click(function() {
+                    cargaTareas($(this).attr('id'));
+                    
                 });
 
             }

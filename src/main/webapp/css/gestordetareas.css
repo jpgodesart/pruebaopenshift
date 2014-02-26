@@ -1,0 +1,43 @@
+/* 
+    Document   : gestordetareas
+    Created on : 26-feb-2014, 10:26:25
+    Author     : al037721
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#cartel{
+    position: relative;
+}
+#marco{
+    position: relative;
+    display: block;
+    padding: 50px;
+    margin: auto;
+    float: left;
+    top: 50%;
+    left: 40%;
+}
+
+.tablaproyectos{
+    
+    border: 5px solid #002a80;
+    float: left;
+    margin-left: 5%;
+    text-align: center;
+}
+.tablaproyectos td{
+    padding: 10px;
+}
+
+.tablatareas{
+    border: 5px solid #b3b3b3;
+    float: left;
+    margin-left: 5%;
+    text-align: center;
+}
+
+.tablatareas td{
+    padding: 10px;
+}
+

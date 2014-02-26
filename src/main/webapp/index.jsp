@@ -29,6 +29,7 @@
         <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
         <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
         <script src="./js/vendor/jquery.validate.min.js"></script>
+        <link rel="stylesheet" href="css/gestordetareas.css">
 
     </head>
     <body>
@@ -220,7 +221,9 @@
                     var usutareaControl = control_usutarea_list('<%=request.getContextPath()%>');
                     usutareaControl.inicia(usutareaView, 1, null, null, 10, null, null, null, null);
                     return false;
-                });               
+                });
+                
+                
             });
 
         </script>
