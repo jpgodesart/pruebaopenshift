@@ -30,14 +30,34 @@
     padding: 10px;
 }
 
-.tablatareas{
-    border: 5px solid #b3b3b3;
-    float: left;
+.tablatareas1,.tablatareas2,.tablatareas3,.tablatareas4{
+    width: 70%;
     margin-left: 5%;
-    text-align: center;
+    text-align: justify;
 }
 
-.tablatareas td{
-    padding: 10px;
+.tablatareas1{
+    border: 5px solid #d9d9d9;
+    background: #d9d9d9;
+}
+.tablatareas2{
+    border: 5px solid #c4e3f3;
+    background: #c4e3f3;
+}
+.tablatareas3{
+    border: 5px solid khaki;
+    background: khaki;
+}
+.tablatareas4{
+    border: 5px solid #7aba7b;
+    background: #7aba7b;
 }
 
+.tablatareas1,.tablatareas2,.tablatareas3,.tablatareas4 td{
+    padding-left: 2%;
+}
+
+.action05{
+    background: #149bdf;
+    color: #FFFFFF;
+}

@@ -12,7 +12,6 @@ var control_proyecto_list = function(path) {
     function cargaBotoneraMantenimiento() {
         var botonera = [
             {"class": "btn btn-mini action05", "icon": "", "text": "Tareas"},
-            {"class": "btn btn-mini action01", "icon": "icon-eye-open", "text": ""},
             {"class": "btn btn-mini action02", "icon": "icon-zoom-in", "text": ""},
             {"class": "btn btn-mini action03", "icon": "icon-pencil", "text": ""},
             {"class": "btn btn-mini action04", "icon": "icon-remove", "text": ""}
