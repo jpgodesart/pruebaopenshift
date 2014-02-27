@@ -5,7 +5,7 @@
 --%>
 
 <form id="loginForm" action="jsp" class="form-horizontal" method="post">
-    <h1>Formulario de entrada al sistema</h1>
+    <h3>Entrada a Gestor De Tareas</h3>
     <input type="hidden" name="ob" value="usuario" />
     <input type="hidden" name="op" value="login02" />
     <div class="control-group">

@@ -21,47 +21,116 @@
 
 .tablaproyectos{
     
-    border: 5px solid #002a80;
+    border: 5px solid #3e4347;
     float: left;
     margin-left: 5%;
+    margin-bottom: 5%;
     text-align: center;
 }
 .tablaproyectos td{
     padding: 10px;
 }
+.tablaproyectos tr:first-child{
+    background: #3e4347;
+    color: #FFFFFF;
+    font-weight: bolder;
+    text-transform: uppercase; 
+}
 
 .tablatareas1,.tablatareas2,.tablatareas3,.tablatareas4{
-    width: 70%;
+    width: 30%;
     margin-left: 5%;
+    margin-bottom: 5%;
     text-align: justify;
+    float: left;
 }
 
 .tablatareas1{
     border: 5px solid #d9d9d9;
-    background: #d9d9d9;
+    
 }
 .tablatareas2{
     border: 5px solid #c4e3f3;
-    background: #c4e3f3;
+    
 }
 .tablatareas3{
     border: 5px solid khaki;
-    background: khaki;
+    
 }
 .tablatareas4{
     border: 5px solid #7aba7b;
-    background: #7aba7b;
+    
 }
+.tablatareas1 tr:first-child{
+    background: #d9d9d9;
+    
+    font-weight: bolder;
+    text-transform: uppercase; 
+}
+.tablatareas2 tr:first-child{
+    background: #c4e3f3;
+    
+    font-weight: bolder;
+    text-transform: uppercase; 
+}
+.tablatareas3 tr:first-child{
+    background: khaki;
+    
+    font-weight: bolder;
+    text-transform: uppercase; 
+}
+.tablatareas4 tr:first-child{
+    background: #7aba7b;
+    
+    font-weight: bolder;
+    text-transform: uppercase; 
+}
+
+
+
 
 /*.tablatareas1,.tablatareas2,.tablatareas3,.tablatareas4 td{
     padding-left: 2%;
 }*/
 
 .action05{
-    background: #149bdf;
+    background: #3e4347;
     color: #FFFFFF;
 }
 
 #barra{
-    background: #d9d9d9;
+    background: #3e4347;
+}
+
+#imglogo{
+    width: 100px;
+}
+body * {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+.navbar .nav>li>a, .pull-right, .navbar-inverse .navbar-link{
+    color: #FFFFFF;
+    font-weight: bolder;
+    padding: 20px 10px;
+}
+#barra{
+    height: 60px;
+}
+.pull-right{
+    padding: 10px;
+}
+
+.navbar-inverse .nav>li>a:hover{
+    color:#9a9c9e;
+    background: #141618;
+}
+#btntarea{
+    float: right;
+    width: 30%;
+    position: relative;
+    
+}
+#btntarea h5{
+    
+    padding: 0;
 }

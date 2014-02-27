@@ -14,7 +14,8 @@ var control_proyecto_list = function(path) {
             {"class": "btn btn-mini action05", "icon": "", "text": "Tareas"},
             {"class": "btn btn-mini action02", "icon": "icon-zoom-in", "text": ""},
             {"class": "btn btn-mini action03", "icon": "icon-pencil", "text": ""},
-            {"class": "btn btn-mini action04", "icon": "icon-remove", "text": ""}
+            {"class": "btn btn-mini action04", "icon": "icon-remove", "text": ""},
+            {"class": "btn btn-mini action06", "icon": "", "text": "Usuarios del Proyecto"}
         ];
         return botonera;
     }
@@ -154,21 +155,21 @@ var control_proyecto_list = function(path) {
     }
     
     /****************** USUARIOS DE PROYECTO *********************************/
-    /*
+    
         function cargaUsu(id) {
 
         var usu = objeto('tarea', path);
-        var usuView = vista(tarea, path);
+        var usuView = vista(usu, path);
 
         $('#indexContenidoJsp').empty();
-        $('#indexContenido').empty().append(usuarioView.getEmptyList());
+        $('#indexContenido').empty().append(usuView.getEmptyList());
 
-        var usuarioControl = control_usuario_list(path);
-        usuarioControl.inicia(usuarioView, 1, null, null, 10, null, null, null, null, "id_proyecto", "equals", id);
+        var usuControl = control_tarea_list(path);
+        usuControl.inicia(usuView, 1, null, null, 10, null, null, null, null, "id_proyecto", "equals", id);
         return false;
 
     }
-    */
+    
     
     /**************************************************************************/
     
@@ -244,6 +245,11 @@ var control_proyecto_list = function(path) {
                 $(prefijo_div + '.btn.btn-mini.action05').unbind('click');
                 $(prefijo_div + '.btn.btn-mini.action05').click(function() {
                     cargaTareas($(this).attr('id'));
+                    
+                });
+                $(prefijo_div + '.btn.btn-mini.action06').unbind('click');
+                $(prefijo_div + '.btn.btn-mini.action06').click(function() {
+                    cargaUsu($(this).attr('id'));
                     
                 });
 

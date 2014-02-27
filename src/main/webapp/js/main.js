@@ -219,28 +219,11 @@ var vista = function(objeto, ContextPath) {
 
             return tabla;
         },
-        
-/**********************TABLA PROYECTO ******************/
+        /**********************TABLA PROYECTO ******************/
 
         getPageTableProy: function(pag, order, ordervalue, rpp, filter, filteroperator, filtervalue, systemfilter, systemfilteroperator, systemfiltervalue, botonera) {
             //var tabla = "<table class=\"tablaproyectos\">";
             var tabla = "";
-           /* if (objeto.getPrettyFieldNamesAcciones() !== null) {
-                tabla += '<tr>';
-
-                $.each(objeto.getPrettyFieldNamesAcciones(), function(index, value) {
-                    tabla += '<th>' + value;
-                    if (value === "acciones") {
-                        tabla += '</th>';
-                    } else {
-                        tabla += '<a class="orderAsc' + index + '" href="#"><i class="icon-arrow-up"></i></a>';
-                        tabla += '<a class="orderDesc' + index + '" href="#"><i class="icon-arrow-down"></i></a>';
-                        tabla += '</th>';
-                    }
-
-                });
-                tabla += '</tr>';
-            }*/
 
             page = objeto.getPage(pag, order, ordervalue, rpp, filter, filteroperator, filtervalue, systemfilter, systemfilteroperator, systemfiltervalue)['list'];
             if (page != 0) {
@@ -274,11 +257,11 @@ var vista = function(objeto, ContextPath) {
                                     tabla += '<tr><td><i class="icon-remove"></i></td></tr>';
                                     break;
                                 default:
-                                    if(valor != "id"){
-                                        if(valor === "nombre"){
-                                            tabla += '<tr><td>' + value[valor] + " -- " + valor +'</td></tr>';
-                                        }else{
-                                            tabla += '<tr><td>' + value[valor] + " -- " + valor +'</td></tr>';
+                                    if (valor != "id") {
+                                        if (valor === "nombre") {
+                                            tabla += '<tr><td>' + value[valor] + '</td></tr>';
+                                        } else {
+                                            tabla += '<tr><td>' + value[valor] + '</td></tr>';
                                         }
                                     }
                             }
@@ -299,10 +282,8 @@ var vista = function(objeto, ContextPath) {
 
             return tabla;
         },
-
-
-/**************************************************************************************/
-/***********************PAGINA TAREAS*********************************************/
+        /**************************************************************************************/
+        /***********************PAGINA TAREAS*********************************************/
 
         getPageTableTarea: function(pag, order, ordervalue, rpp, filter, filteroperator, filtervalue, systemfilter, systemfilteroperator, systemfiltervalue, botonera) {
             var tabla = "";
@@ -314,35 +295,26 @@ var vista = function(objeto, ContextPath) {
                 $.each(page, function(index, value) {
                     //tabla += '<tr>';
                     $.each(objeto.getFieldNames(), function(index, valor) {
-                        if(valor === "id_estado"){
-                            if(value[valor] == 1){
+                        if (valor === "id_estado") {
+                            if (value[valor] == 1) {
                                 tabla += "<table class=\"tablatareas1\">";
                             }
-                            if(value[valor] == 2){
+                            if (value[valor] == 2) {
                                 tabla += "<table class=\"tablatareas2\">";
                             }
-                            if(value[valor] == 3){
+                            if (value[valor] == 3) {
                                 tabla += "<table class=\"tablatareas3\">";
                             }
-                            if(value[valor] == 4){
+                            if (value[valor] == 4) {
                                 tabla += "<table class=\"tablatareas4\">";
-                            }                            
-                           /* switch (value[valor]){
-                                case 1: 
-                                    tabla += "<table class=\"tablatareas1\">";
-                                case 2: 
-                                    tabla += "<table class=\"tablatareas2\">";
-                                case 3: 
-                                    tabla += "<table class=\"tablatareas3\">";
-                                case 4: 
-                                    tabla += "<table class=\"tablatareas4\">";                                
-                            }*/
+                            }
+
                         }
-                    //tabla += "<table class=\"tablatareas\">";
-                });
+
+                    });
 
                     $.each(objeto.getFieldNames(), function(index, valor) {
-                   
+
                         if (/id_/.test(valor)) {
                             $.when(ajaxCallSync(ContextPath + '/json?ob=' + valor.split("_")[1].replace(/[0-9]*$/, "") + '&op=get&id=' + value[valor], 'GET', '')).done(function(data) {
                                 contador = 0;
@@ -368,23 +340,28 @@ var vista = function(objeto, ContextPath) {
                                     tabla += '<tr><td><i class="icon-remove"></i></td></tr>';
                                     break;
                                 default:
-                                    
-                                    if(valor != "id"){
-                                        if(valor === "nombre"){
-                                            tabla += '<tr><td><h5>' + value[valor] + '</h5></td></tr>';
-                                        }else{
+
+
+                                    if (valor != "id") {
+                                        if (valor === "nombre") {
+                                            tabla += '<tr><td><h5>' + value[valor] + '<div id="btntarea">';
+                                            $.each(botonera, function(indice, valor) {
+                                                tabla += '<a class="' + valor.class + '" id=' + value.id + ' href="#"><i class="' + valor.icon + '"></i> ' + valor.text + '</a>';
+                                            });
+                                            tabla += '<h5>'  + '</div></h5></td></tr>';
+                                        } else {
                                             tabla += '<tr><td>' + value[valor] + '</td></tr>';
                                         }
                                     }
                             }
                         }
                     });
-                    tabla += '<tr><td><div class="btn-toolbar"><div class="btn-group">';
+                    //tabla += '<tr><td><div class="btn-toolbar"><div class="btn-group">';
 
-                    $.each(botonera, function(indice, valor) {
-                        tabla += '<a class="' + valor.class + '" id=' + value.id + ' href="#"><i class="' + valor.icon + '"></i> ' + valor.text + '</a>';
-                    });
-                    tabla += '</div></div></td></tr></table>';
+                    // $.each(botonera, function(indice, valor) {
+                    //      tabla += '<a class="' + valor.class + '" id=' + value.id + ' href="#"><i class="' + valor.icon + '"></i> ' + valor.text + '</a>';
+                    //   });
+                    tabla += '</table>';
                     //tabla += '</tr>';
                 });
                 //tabla += "</table>";
@@ -394,9 +371,79 @@ var vista = function(objeto, ContextPath) {
 
             return tabla;
         },
+        /**************************************************************************************************/
+        /******************** USU ****************************************************************/
+        getPageTableUsu: function(pag, order, ordervalue, rpp, filter, filteroperator, filtervalue, systemfilter, systemfilteroperator, systemfiltervalue, botonera) {
+            var tabla = "<table class=\"table table table-striped table-condensed\">";
+            if (objeto.getPrettyFieldNamesAcciones() !== null) {
+                tabla += '<tr>';
 
-/**************************************************************************************************/
+                $.each(objeto.getPrettyFieldNamesAcciones(), function(index, value) {
+                    tabla += '<th>' + value;
+                    if (value === "acciones") {
+                        tabla += '</th>';
+                    } else {
+                        tabla += '<a class="orderAsc' + index + '" href="#"><i class="icon-arrow-up"></i></a>';
+                        tabla += '<a class="orderDesc' + index + '" href="#"><i class="icon-arrow-down"></i></a>';
+                        tabla += '</th>';
+                    }
 
+                });
+                tabla += '</tr>';
+            }
+
+            page = objeto.getPage(pag, order, ordervalue, rpp, filter, filteroperator, filtervalue, systemfilter, systemfilteroperator, systemfiltervalue)['list'];
+            if (page != 0) {
+
+                $.each(page, function(index, value) {
+                    tabla += '<tr>';
+
+                    $.each(objeto.getFieldNames(), function(index, valor) {
+                        if (/id_/.test(valor)) {
+                            $.when(ajaxCallSync(ContextPath + '/json?ob=' + valor.split("_")[1].replace(/[0-9]*$/, "") + '&op=get&id=' + value[valor], 'GET', '')).done(function(data) {
+                                contador = 0;
+                                add_tabla = "";
+                                for (key in data) {
+                                    if (contador == 0)
+                                        add_tabla = '<td>id=' + data[key] + '(no existe)</td>';
+                                    if (contador == 1)
+                                        add_tabla = '<td>' + data[key] + '</td>';
+                                    contador++;
+                                }
+                                if (contador == 0) {
+                                    add_tabla = '<td>' + value[valor] + ' #error</td>';
+                                }
+                                tabla += add_tabla;
+                            });
+                        } else {
+                            switch (value[valor]) {
+                                case true:
+                                    tabla += '<td><i class="icon-ok"></i></td>';
+                                    break;
+                                case false:
+                                    tabla += '<td><i class="icon-remove"></i></td>';
+                                    break;
+                                default:
+                                    tabla += '<td>' + value[valor] + '</td>';
+                            }
+                        }
+                    });
+                    tabla += '<td><div class="btn-toolbar"><div class="btn-group">';
+
+                    $.each(botonera, function(indice, valor) {
+                        tabla += '<a class="' + valor.class + '" id=' + value.id + ' href="#"><i class="' + valor.icon + '"></i> ' + valor.text + '</a>';
+                    });
+                    tabla += '</div></div></td>';
+                    tabla += '</tr>';
+                });
+                tabla += "</table>";
+            } else {
+                tabla = "<div class=\"alert alert-info\"><h4>Ha habido un problema con la base de datos</h4><br/>El probema puede ser:<ul><li>La tabla está vacia.</li><li>Tu busqueda no tubo resultados.</li></ul></div>";
+            }
+
+            return tabla;
+        },
+        /******************************************************************************************/
         getObjectTable: function(id) {
             cabecera = objeto.getPrettyFieldNames();
             datos = objeto.getOne(id);

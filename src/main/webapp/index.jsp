@@ -46,7 +46,7 @@
                         <span class="icon-bar"></span> 
                         <span class="icon-bar"></span>
                     </a> 
-                    <a class="brand" href="jsp">Gestion de Tareas</a>                   
+                    <a class="brand" href="jsp"><img id="imglogo" src="img/LOGO.jpg"/></a>                   
                     <div class="nav-collapse collapse">
                         <%if (user != null) {%>
                         <jsp:include page="jsp/menuSuperior.jsp" />   
