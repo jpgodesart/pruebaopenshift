@@ -7,9 +7,9 @@ var control_tarea_list = function(path) {
 
     function cargaBotoneraMantenimiento() {
         var botonera = [
-            {"class": "btn btn-mini action02", "icon": "icon-zoom-in", "text": ""},
-            {"class": "btn btn-mini action03", "icon": "icon-pencil", "text": ""},
-            {"class": "btn btn-mini action04", "icon": "icon-remove", "text": ""}
+            {"class": "btn btn-mini action02", "icon": "icon-zoom-in icon-white", "text": ""},
+            {"class": "btn btn-mini action03", "icon": "icon-pencil icon-white", "text": ""},
+            {"class": "btn btn-mini action04", "icon": "icon-remove icon-white", "text": ""}
         ];
         return botonera;
     }

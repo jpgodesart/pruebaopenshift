@@ -150,7 +150,7 @@ var vista = function(objeto, ContextPath) {
             return vector;
         },
         getPageTable: function(pag, order, ordervalue, rpp, filter, filteroperator, filtervalue, systemfilter, systemfilteroperator, systemfiltervalue, botonera) {
-            var tabla = "<table class=\"table table table-striped table-condensed\">";
+            var tabla = "<table id=\"tablageneral\" class=\"table table-striped table-condensed\">";
             if (objeto.getPrettyFieldNamesAcciones() !== null) {
                 tabla += '<tr>';
 

@@ -134,3 +134,29 @@ body * {
     
     padding: 0;
 }
+#tablageneral{
+    
+    border: 1px solid #3e4347;
+    width: 100%;
+}
+#tablageneral th{
+    border: 1px solid #3e4347;
+    background: #3e4347;
+    color: #FFFFFF;
+}
+.btn{
+    background: #3e4347;
+    color:#FFFFFF;
+}
+.btn:hover{
+    background: #141618;
+    color:#9a9c9e;
+}
+.inicio1{
+    position: relative;
+    left: 8%;
+    background: #FFFFFF;
+    color: #3e4347;
+    text-align: center;
+    box-shadow: 10px 10px 5px #888888;
+}
