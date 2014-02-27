@@ -111,8 +111,8 @@ var control_usutarea_list = function(path) {
         cargaClaveAjena('#id_usuario', '#id_usuario_desc', 'usuario')
         $(prefijo_div + '#id_usuario_button').unbind('click');
         $(prefijo_div + '#id_usuario_button').click(function() {
-            loadForeign('usuario', '#modal02', control_usuario_list, callbackSearchProducto);
-            function callbackSearchProducto(id) {
+            loadForeign('usuario', '#modal02', control_usuario_list, callbackSearchUsuario);
+            function callbackSearchUsuario(id) {
                 $(prefijo_div + '#modal02').modal('hide');
                 $(prefijo_div + '#modal02').data('modal', null);
                 $(prefijo_div + '#id_usuario').val($(this).attr('id'));
@@ -126,8 +126,8 @@ var control_usutarea_list = function(path) {
         cargaClaveAjena('#id_tarea', '#id_tarea_desc', 'tarea');
         $(prefijo_div + '#id_tarea_button').unbind('click');
         $(prefijo_div + '#id_tarea_button').click(function() {
-            loadForeign('usuario', '#modal02', control_usuario_list, callbackSearchProducto);
-            function callbackSearchProducto(id) {
+            loadForeign('tarea', '#modal02', control_tarea_list, callbackSearchTarea);
+            function callbackSearchTarea(id) {
                 $(prefijo_div + '#modal02').modal('hide');
                 $(prefijo_div + '#modal02').data('modal', null);
                 $(prefijo_div + '#id_tarea').val($(this).attr('id'));

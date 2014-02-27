@@ -17,6 +17,7 @@ public class TareaBean {
     private String descripcion = "";
     private Integer id_estado = 0;
     private Integer id_proyecto = 0;
+    private Integer id_usuario = 0;
     
     
     
@@ -68,6 +69,16 @@ public class TareaBean {
     public void setId_proyecto(Integer id_proyecto) {
         this.id_proyecto = id_proyecto;
     }
+
+    public Integer getId_usuario() {
+        return id_usuario;
+    }
+
+    public void setId_usuario(Integer id_usuario) {
+        this.id_usuario = id_usuario;
+    }
+
+
 
     
     

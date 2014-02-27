@@ -7,7 +7,6 @@ var control_tarea_list = function(path) {
 
     function cargaBotoneraMantenimiento() {
         var botonera = [
-            {"class": "btn btn-mini action01", "icon": "icon-eye-open", "text": ""},
             {"class": "btn btn-mini action02", "icon": "icon-zoom-in", "text": ""},
             {"class": "btn btn-mini action03", "icon": "icon-pencil", "text": ""},
             {"class": "btn btn-mini action04", "icon": "icon-remove", "text": ""}
@@ -74,8 +73,8 @@ var control_tarea_list = function(path) {
 
         $(prefijo_div + '#id_estado_button').unbind('click');
         $(prefijo_div + '#id_estado_button').click(function() {
-            loadForeign('estado', '#modal02', control_estado_list, callbackSearchId_estado);
-            function callbackSearchId_estado(id) {
+            loadForeign('estado', '#modal02', control_estado_list, callbackSearchEstado);
+            function callbackSearchEstado(id) {
                 $(prefijo_div + '#modal02').modal('hide');
                 $(prefijo_div + '#modal02').data('modal', null);
                 $(prefijo_div + '#id_estado').val($(this).attr('id'));
@@ -89,8 +88,8 @@ var control_tarea_list = function(path) {
         cargaClaveAjena('#id_proyecto', '#id_proyecto_desc', 'proyecto')
         $(prefijo_div + '#id_proyecto_button').unbind('click');
         $(prefijo_div + '#id_proyecto_button').click(function() {
-            loadForeign('proyecto', '#modal02', control_proyecto_list, callbackSearchId_proyecto);
-            function callbackSearchId_proyecto(id) {
+            loadForeign('proyecto', '#modal02', control_proyecto_list, callbackSearchProyecto);
+            function callbackSearchProyecto(id) {
                 $(prefijo_div + '#modal02').modal('hide');
                 $(prefijo_div + '#modal02').data('modal', null);
                 $(prefijo_div + '#id_proyecto').val($(this).attr('id'));
@@ -99,6 +98,21 @@ var control_tarea_list = function(path) {
             }
             return false;
         });
+        
+        //clave ajena usuario
+        cargaClaveAjena('#id_usuario', '#id_usuario_desc', 'usuario')
+        $(prefijo_div + '#id_usuario_button').unbind('click');
+        $(prefijo_div + '#id_usuario_button').click(function() {
+            loadForeign('usuario', '#modal02', control_usuario_list, callbackSearchUsuario);
+            function callbackSearchUsuario(id) {
+                $(prefijo_div + '#modal02').modal('hide');
+                $(prefijo_div + '#modal02').data('modal', null);
+                $(prefijo_div + '#id_usuario').val($(this).attr('id'));
+                cargaClaveAjena('#id_usuario', '#id_usuario_desc', 'usuario');
+                return false;
+            }
+            return false;
+        });        
 
         $('#formulario').validate({
             rules: {
@@ -208,7 +222,15 @@ var control_tarea_list = function(path) {
             } else {
                 $(prefijo_div + "#datos").empty().append(view.getLoading()).html(view.getPageTableTarea(pag, order, ordervalue, rpp, filter, filteroperator, filtervalue, systemfilter, systemfilteroperator, systemfiltervalue, cargaBotoneraMantenimiento()));
             }
-
+            
+            //LISTADO USUARIOS
+/*
+            if (callback) {
+                $(prefijo_div + "#datos").empty().append(view.getLoading()).html(view.getPageTableTarea(pag, order, ordervalue, rpp, filter, filteroperator, filtervalue, systemfilter, systemfilteroperator, systemfiltervalue, cargaBotoneraBuscando()));
+            } else {
+                $(prefijo_div + "#datos").empty().append(view.getLoading()).html(view.getPageTableTarea(pag, order, ordervalue, rpp, filter, filteroperator, filtervalue, systemfilter, systemfilteroperator, systemfiltervalue, cargaBotoneraMantenimiento()));
+            }            */
+//////////////////////////////////////////////////
             //muestra la frase con el número de registros de la consulta
 
             $(prefijo_div + "#registers").empty().append(view.getLoading()).html(view.getRegistersInfo(filter, filteroperator, filtervalue, systemfilter, systemfilteroperator, systemfiltervalue));

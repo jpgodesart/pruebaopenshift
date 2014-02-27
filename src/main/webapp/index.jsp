@@ -39,7 +39,7 @@
 
 
         <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="navbar-inner">
+            <div id="barra" class="navbar-inner">
                 <div class="container-fluid">
                     <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> 
                         <span class="icon-bar"></span> 
@@ -60,13 +60,13 @@
         <div class="container-fluid">
             <div class="row-fluid">
                 <%
-                    if (user != null) {
-                        out.print("<div class=\"span2\">");
+                    //if (user != null) {
+                     //   out.print("<div class=\"span2\">");
                 %>
-                <jsp:include page="jsp/menuLateral.jsp" />
+               <!-- <//jsp:include page="jsp/menuLateral.jsp" /> -->
                 <%
-                        out.print("</div>");
-                    }
+                      //  out.print("</div>");
+                   // }
                 %>
                 <%
                     if (user != null) {
@@ -83,7 +83,7 @@
                     out.print("</div>");
                 %>    
                 <div class="row-fluid">
-                    <div class="span12"><hr><footer><p>&copy; Rafael Aznar (2013)</p></footer></div>   
+                    <div class="span12"><hr><footer><p>&copy; Juan Pérez (2014)</p></footer></div>   
                 </div>
             </div>
         </div>                    

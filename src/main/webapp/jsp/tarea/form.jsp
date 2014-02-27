@@ -58,6 +58,20 @@
         </div>
     </div> 
 
+    <div class="control-group">
+        <label class="control-label" for="id_usuario">Id usuario: </label> 
+        <div class="controls">           
+            <input readonly="true" id="id_usuario" class="input-mini"
+                   name="id_usuario" type="text" size="5" maxlength="5" />  
+            <a class="btn btn-mini" id="id_usuario_button" href="#"><i class="icon-search"></i></a>
+        </div>
+    </div>
+    <div class="control-group">
+        <div class="controls">
+            <span id="id_usuario_desc" class="alert alert-success"></span>                                       
+        </div>
+    </div> 
+
 
     <div class="control-group">
         <div class="controls">

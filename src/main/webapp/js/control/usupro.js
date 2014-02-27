@@ -111,8 +111,8 @@ var control_usupro_list = function(path) {
         cargaClaveAjena('#id_usuario', '#id_usuario_desc', 'usuario')
         $(prefijo_div + '#id_usuario_button').unbind('click');
         $(prefijo_div + '#id_usuario_button').click(function() {
-            loadForeign('usuario', '#modal02', control_usuario_list, callbackSearchProducto);
-            function callbackSearchProducto(id) {
+            loadForeign('usuario', '#modal02', control_usuario_list, callbackSearchUsuario);
+            function callbackSearchUsuario(id) {
                 $(prefijo_div + '#modal02').modal('hide');
                 $(prefijo_div + '#modal02').data('modal', null);
                 $(prefijo_div + '#id_usuario').val($(this).attr('id'));
@@ -126,8 +126,8 @@ var control_usupro_list = function(path) {
         cargaClaveAjena('#id_proyecto', '#id_proyecto_desc', 'proyecto');
         $(prefijo_div + '#id_proyecto_button').unbind('click');
         $(prefijo_div + '#id_proyecto_button').click(function() {
-            loadForeign('usuario', '#modal02', control_usuario_list, callbackSearchProducto);
-            function callbackSearchProducto(id) {
+            loadForeign('proyecto', '#modal02', control_proyecto_list, callbackSearchProyecto);
+            function callbackSearchProyecto(id) {
                 $(prefijo_div + '#modal02').modal('hide');
                 $(prefijo_div + '#modal02').data('modal', null);
                 $(prefijo_div + '#id_proyecto').val($(this).attr('id'));

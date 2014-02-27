@@ -19,7 +19,7 @@ public class TareaGetprettycolumns implements GenericOperation {
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws Exception {
         try {
-            String data = "{\"data\": [\"id\", \"nombre\", \"descripcion\", \"id_estado\", \"id_proyecto\"]}";
+            String data = "{\"data\": [\"id\", \"nombre\", \"descripcion\", \"id_estado\", \"id_proyecto\",\"id_usupro\"]}";
             return data;
         } catch (Exception e) {
             throw new ServletException("TareaGetprettycolumnsJson: View Error: " + e.getMessage());

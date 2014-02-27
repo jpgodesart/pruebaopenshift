@@ -53,11 +53,15 @@
     background: #7aba7b;
 }
 
-.tablatareas1,.tablatareas2,.tablatareas3,.tablatareas4 td{
+/*.tablatareas1,.tablatareas2,.tablatareas3,.tablatareas4 td{
     padding-left: 2%;
-}
+}*/
 
 .action05{
     background: #149bdf;
     color: #FFFFFF;
+}
+
+#barra{
+    background: #d9d9d9;
 }
