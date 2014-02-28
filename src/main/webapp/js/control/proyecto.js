@@ -200,7 +200,7 @@ var control_proyecto_list = function(path) {
             //muestra el listado principal
 
             if (callback) {
-                $(prefijo_div + "#datos").empty().append(view.getLoading()).html(view.getPageTableProy(pag, order, ordervalue, rpp, filter, filteroperator, filtervalue, systemfilter, systemfilteroperator, systemfiltervalue, cargaBotoneraBuscando()));
+                $(prefijo_div + "#datos").empty().append(view.getLoading()).html(view.getPageTable(pag, order, ordervalue, rpp, filter, filteroperator, filtervalue, systemfilter, systemfilteroperator, systemfiltervalue, cargaBotoneraBuscando()));
             } else {
                 $(prefijo_div + "#datos").empty().append(view.getLoading()).html(view.getPageTableProy(pag, order, ordervalue, rpp, filter, filteroperator, filtervalue, systemfilter, systemfilteroperator, systemfiltervalue, cargaBotoneraMantenimiento()));
             }
