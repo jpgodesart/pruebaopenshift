@@ -8,10 +8,7 @@ import net.daw.bean.AlumnoBean;
 import net.daw.bean.UsuarioBean;
 import net.daw.helper.Conexion;
 
-/**
- *
- * @author Sergio
- */
+
 public class AlumnoDao extends GenericDaoImplementation<AlumnoBean> {
 
     public AlumnoDao(Conexion.Tipo_conexion tipoConexion) throws Exception {

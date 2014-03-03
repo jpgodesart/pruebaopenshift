@@ -13,10 +13,19 @@ public class AlumnoBean {
 
     private Integer id = 0;
     private Integer id_usuario = 0;
+    private String dni = "";
+    private String numexpediente = "";
     private String nombre = "";
     private String ape1 = "";
     private String ape2 = "";
+    private String sexo = "";
+    private String domicilio = "";
+    private String codpostal = "";
+    private String poblacion = "";
+    private String provincia = "";
+    private String telefono = "";
     private String email = "";
+
 
     public AlumnoBean() {
     }
@@ -111,6 +120,70 @@ public class AlumnoBean {
      */
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getDni() {
+        return dni;
+    }
+
+    public void setDni(String dni) {
+        this.dni = dni;
+    }
+
+    public String getNumexpediente() {
+        return numexpediente;
+    }
+
+    public void setNumexpediente(String numexpediente) {
+        this.numexpediente = numexpediente;
+    }
+
+    public String getSexo() {
+        return sexo;
+    }
+
+    public void setSexo(String sexo) {
+        this.sexo = sexo;
+    }
+
+    public String getDomicilio() {
+        return domicilio;
+    }
+
+    public void setDomicilio(String domicilio) {
+        this.domicilio = domicilio;
+    }
+
+    public String getCodpostal() {
+        return codpostal;
+    }
+
+    public void setCodpostal(String codpostal) {
+        this.codpostal = codpostal;
+    }
+
+    public String getPoblacion() {
+        return poblacion;
+    }
+
+    public void setPoblacion(String poblacion) {
+        this.poblacion = poblacion;
+    }
+
+    public String getProvincia() {
+        return provincia;
+    }
+
+    public void setProvincia(String provincia) {
+        this.provincia = provincia;
+    }
+
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
     }
 
 

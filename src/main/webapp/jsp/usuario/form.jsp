@@ -1,8 +1,4 @@
-<%-- 
-    Document   : form
-    Created on : Jan 21, 2013, 10:24:17 AM
-    Author     : Jose
---%>
+
 <form class="form-horizontal" action="#" id="formulario" name="formulario">
     <div class="control-group">
         <label class="control-label" for="inputId">Id:</label>

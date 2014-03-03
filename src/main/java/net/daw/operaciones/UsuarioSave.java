@@ -5,6 +5,7 @@
 package net.daw.operaciones;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import java.util.HashMap;
 import java.util.Map;
 import javax.servlet.ServletException;
@@ -17,10 +18,6 @@ import net.daw.helper.EncodingUtil;
 
 
 
-/**
- *
- * @author Alvaro
- */
 public class UsuarioSave implements GenericOperation {
 
     @Override

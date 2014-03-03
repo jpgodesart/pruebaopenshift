@@ -123,7 +123,7 @@ var control_alumno_list = function(path) {
                     required: true,
                     maxlength: 9,
                     caracteresespeciales: true,
-                    nifES: true
+
 
                 },
                 numexpediente: {
@@ -189,11 +189,7 @@ var control_alumno_list = function(path) {
                     maxlength: 150,
                     email: true
                 },
-                validado: {
-                    required: true,
-                    maxlength: 2,
-                    caracteresespeciales: true
-                }
+
             },
             messages: {
                 id_usuario: {
@@ -255,10 +251,7 @@ var control_alumno_list = function(path) {
                     maxlength: "Máximo 150 carácteres",
                     email: "Por favor, introduce un email válido"
                 },
-                validado: {
-                    required: "Introduce tu Si o No",
-                    maxlength: "Máximo 2 carácteres"
-                }
+
 
             },
             highlight: function(element) {

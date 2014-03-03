@@ -1,8 +1,4 @@
-<%-- 
-    Document   : form
-    Created on : Jan 24, 2013, 12:02:17 AM
-    Author     : Sergio
---%>
+
 <form class="form-horizontal" action="#" id="formulario" name="formulario">
     <h2>Entrada</h2>
     <div class="control-group">
@@ -15,7 +11,7 @@
         <label class="control-label" for="inputId_usuario">ID Usuario:</label>
         <div class="controls">
             <input type="text" id="id_usuario" name="id_usuario" placeholder="Id usuario" />
-            <a class="btn btn-mini" id="id_usuario_button" href="#"><i class="icon-search icon-white"></i></a>
+            <a class="btn btn-mini" id="id_usuario_button" href="#"><i class="icon-search"></i></a>
         </div>
     </div>
     <div class="control-group">
@@ -93,16 +89,6 @@
         <label class="control-label"  for="inputEmail">Em@il:</label>
         <div class="controls">
             <input type="text" id="email" name="email" size="15" placeholder="Email" />
-        </div>
-    </div>
-    <div class="control-group">
-        <label class="control-label"  for="inputValidado">Validado:</label>
-        <div class="controls">
-            <select id="validado" name="validado" type="text" autofocus="autofocus">
-                <option value="">Seleccione una opción...</option>
-                <option value="SI">Si</option>
-                <option value="NO">No</option>
-            </select>
         </div>
     </div>
     <div class="control-group">

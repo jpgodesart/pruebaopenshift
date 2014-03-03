@@ -5,30 +5,41 @@
 package net.daw.operaciones;
 
 import com.google.gson.Gson;
+import com.sun.java.swing.plaf.windows.resources.windows;
 import java.util.HashMap;
 import java.util.Map;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import net.daw.bean.ProyectoBean;
+import net.daw.bean.UsuarioBean;
 import net.daw.dao.ProyectoDao;
 import net.daw.helper.Conexion;
 
 
 
-/**
- *
- * @author rafa
- */
+
 public class ProyectoRemove implements GenericOperation {
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws Exception {
 
+                UsuarioBean oUsuarioBean;
+        oUsuarioBean = (UsuarioBean) request.getSession().getAttribute("usuarioBean");
+        java.lang.Enum tipoUsuario = oUsuarioBean.getTipoUsuario();
+        //
+        if (tipoUsuario.equals(net.daw.helper.Enum.TipoUsuario.Profesor)) {   
         try {
             ProyectoDao oProyectoDAO = new ProyectoDao(Conexion.getConection());
-            ProyectoBean oProyecto = new ProyectoBean();                                           
+            ProyectoBean oProyecto = new ProyectoBean();
+            
+        //Parte para saber el tipo de usuario
+
+            
             oProyecto.setId(Integer.parseInt(request.getParameter("id")));            
             Map<String, String> data = new HashMap<>();
+            
+       
+            
             if (oProyecto != null) {
                 oProyectoDAO.remove(oProyecto);
                 data.put("status", "200");
@@ -42,6 +53,10 @@ public class ProyectoRemove implements GenericOperation {
             return resultado;        
         } catch (Exception e) {
             throw new ServletException("ProyectoRemoveJson: View Error: " + e.getMessage());
+        }
+        
+        }else{
+            return "alert(\"No eres profesor\");";
         }
     }
 }

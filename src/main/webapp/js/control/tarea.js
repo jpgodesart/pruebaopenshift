@@ -63,6 +63,8 @@ var control_tarea_list = function(path) {
         loadForm(place, cabecera, view.getEmptyForm(), pie, false);
         if (action == "edit") {
             view.doFillForm(id);
+            $(prefijo_div + '#id_proyecto').hide();
+            $(prefijo_div + '#id_proyecto_button').hide();
         } else {
             $(prefijo_div + '#id').val('0').attr("disabled", true);
             $(prefijo_div + '#nombre').focus();

@@ -11,7 +11,7 @@ var control_usuario_list = function(path) {
 
     function cargaBotoneraMantenimiento() {
         var botonera = [
-            {"class": "btn btn-mini action01", "icon": "icon-eye-open icon-white", "text": ""},
+            {"class": "btn btn-mini action05", "icon": "", "text": "Tareas Usuario"},
             {"class": "btn btn-mini action02", "icon": "icon-zoom-in icon-white", "text": ""},
             {"class": "btn btn-mini action03", "icon": "icon-pencil icon-white", "text": ""},
             {"class": "btn btn-mini action04", "icon": "icon-remove icon-white", "text": ""}
@@ -116,6 +116,23 @@ var control_usuario_list = function(path) {
             loadForm('#modal02', cabecera, "Código: " + resultado["status"] + "<br />" + resultado["message"] + "<br />", pie, true);
         });
     }
+    
+    //CARGA TAREAS DEL USUARIO
+        function cargaTareas(id) {
+
+        var tarea = objeto('tarea', path);
+        var tareaView = vista(tarea, path);
+
+        $('#indexContenidoJsp').empty();
+        $('#indexContenido').empty().append(tareaView.getEmptyList());
+
+        var tareaControl = control_tarea_list(path);
+        tareaControl.inicia(tareaView, 1, null, null, 10, null, null, null, null, "id_usuario", "equals", id);
+        return false;
+
+    }
+    
+    
 
     function loadModalView(view, place, id) {
         cabecera = "<button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-hidden=\"true\">×</button>" +
@@ -198,7 +215,8 @@ var control_usuario_list = function(path) {
                 });
                 $(prefijo_div + '.btn.btn-mini.action05').unbind('click');
                 $(prefijo_div + '.btn.btn-mini.action05').click(function() {
-                    cargaEntradas($(this).attr('id'));
+                    cargaTareas($(this).attr('id'));
+                    
                 });
 
             }

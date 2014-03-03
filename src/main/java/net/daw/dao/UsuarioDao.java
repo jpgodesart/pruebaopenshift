@@ -5,7 +5,6 @@
 package net.daw.dao;
 
 import net.daw.bean.AlumnoBean;
-import net.daw.bean.EmpresaBean;
 import net.daw.bean.ProfesorBean;
 import net.daw.bean.UsuarioBean;
 import net.daw.helper.Conexion;
@@ -49,19 +48,14 @@ public class UsuarioDao extends GenericDaoImplementation<UsuarioBean> {
             AlumnoBean oAlumnoBean = oAlumnoDao.getFromId_usuario(oUsuarioBean);
             oUsuarioBean.setTipoUsuario(Enum.TipoUsuario.Alumno);
         } catch (Exception e1) {
-            try {
-                EmpresaDao oEmpresaDao = new EmpresaDao(enumTipoConexion);
-                EmpresaBean oEmpresaBean = oEmpresaDao.getFromId_usuario(oUsuarioBean);
-                oUsuarioBean.setTipoUsuario(Enum.TipoUsuario.Empresa);
-            } catch (Exception e2) {
                 try {
                     ProfesorDao oProfesorDao = new ProfesorDao(enumTipoConexion);
                     ProfesorBean oProfesorBean = oProfesorDao.getFromId_usuario(oUsuarioBean);
                     oUsuarioBean.setTipoUsuario(Enum.TipoUsuario.Profesor);
-                } catch (Exception e3) {
-                    throw new Exception("UsuarioDao.type: Error: " + e3.getMessage());
+                } catch (Exception e2) {
+                    throw new Exception("UsuarioDao.type: Error: " + e2.getMessage());
                 }
-            }
+            
         } finally {
             oMysql.desconexion();
         }

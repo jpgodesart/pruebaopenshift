@@ -19,8 +19,8 @@ public class AlumnoGetprettycolumns implements GenericOperation {
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws Exception {
         try {
-            String data = "{\"data\": [\"ID\", \"ID Usuario\", \"Nombre\", \"P. Ape\", "
-                    + "\"S. Ape\", \"Em@il\"]}";
+            String data = "{\"data\": [\"ID\", \"Usuario\", \"Nombre\", \"Ape1\", "
+                    + "\"Ape2\", \"Em@il\", \"DNI\", \"Exp.\", \"Sexo\", \"Domicilio\", \"CP\", \"Población\", \"Provincia\",\"Tlf\"]}";
             return data;
         } catch (Exception e) {
             throw new ServletException("AlumnoGetpagesJson: View Error: " + e.getMessage());
