@@ -159,8 +159,8 @@ var vista = function(objeto, ContextPath) {
                     if (value === "acciones") {
                         tabla += '</th>';
                     } else {
-                        tabla += '<a class="orderAsc' + index + '" href="#"><i class="icon-arrow-up"></i></a>';
-                        tabla += '<a class="orderDesc' + index + '" href="#"><i class="icon-arrow-down"></i></a>';
+                        tabla += '<a class="orderAsc' + index + '" href="#"><i class="icon-arrow-up icon-white"></i></a>';
+                        tabla += '<a class="orderDesc' + index + '" href="#"><i class="icon-arrow-down icon-white"></i></a>';
                         tabla += '</th>';
                     }
 
@@ -194,10 +194,10 @@ var vista = function(objeto, ContextPath) {
                         } else {
                             switch (value[valor]) {
                                 case true:
-                                    tabla += '<td><i class="icon-ok"></i></td>';
+                                    tabla += '<td><i class="icon-ok icon-white"></i></td>';
                                     break;
                                 case false:
-                                    tabla += '<td><i class="icon-remove"></i></td>';
+                                    tabla += '<td><i class="icon-remove icon-white"></i></td>';
                                     break;
                                 default:
                                     tabla += '<td>' + value[valor] + '</td>';
@@ -207,7 +207,7 @@ var vista = function(objeto, ContextPath) {
                     tabla += '<td><div class="btn-toolbar"><div class="btn-group">';
 
                     $.each(botonera, function(indice, valor) {
-                        tabla += '<a class="' + valor.class + '" id=' + value.id + ' href="#"><i class="' + valor.icon + '"></i> ' + valor.text + '</a>';
+                        tabla += '<a class="' + valor.class + '" id=' + value.id + ' href="#"><i class="' + valor.icon + ' icon-white"></i> ' + valor.text + '</a>';
                     });
                     tabla += '</div></div></td>';
                     tabla += '</tr>';
@@ -251,10 +251,10 @@ var vista = function(objeto, ContextPath) {
                         } else {
                             switch (value[valor]) {
                                 case true:
-                                    tabla += '<tr><td><i class="icon-ok"></i></td></tr>';
+                                    tabla += '<tr><td><i class="icon-ok icon-white"></i></td></tr>';
                                     break;
                                 case false:
-                                    tabla += '<tr><td><i class="icon-remove"></i></td></tr>';
+                                    tabla += '<tr><td><i class="icon-remove icon-white"></i></td></tr>';
                                     break;
                                 default:
                                     if (valor != "id") {
@@ -270,7 +270,7 @@ var vista = function(objeto, ContextPath) {
                     tabla += '<tr><td><div class="btn-toolbar"><div class="btn-group">';
 
                     $.each(botonera, function(indice, valor) {
-                        tabla += '<a class="' + valor.class + '" id=' + value.id + ' href="#"><i class="' + valor.icon + '"></i> ' + valor.text + '</a>';
+                        tabla += '<a class="' + valor.class + '" id=' + value.id + ' href="#"><i class="' + valor.icon + ' icon-white"></i> ' + valor.text + '</a>';
                     });
                     tabla += '</div></div></td></tr></table>';
                     //tabla += '</tr>';
@@ -334,10 +334,10 @@ var vista = function(objeto, ContextPath) {
                         } else {
                             switch (value[valor]) {
                                 case true:
-                                    tabla += '<tr><td><i class="icon-ok"></i></td></tr>';
+                                    tabla += '<tr><td><i class="icon-ok icon-white"></i></td></tr>';
                                     break;
                                 case false:
-                                    tabla += '<tr><td><i class="icon-remove"></i></td></tr>';
+                                    tabla += '<tr><td><i class="icon-remove icon-white"></i></td></tr>';
                                     break;
                                 default:
 
@@ -346,7 +346,7 @@ var vista = function(objeto, ContextPath) {
                                         if (valor === "nombre") {
                                             tabla += '<tr><td><h5>' + value[valor] + '<div id="btntarea">';
                                             $.each(botonera, function(indice, valor) {
-                                                tabla += '<a class="' + valor.class + '" id=' + value.id + ' href="#"><i class="' + valor.icon + '"></i> ' + valor.text + '</a>';
+                                                tabla += '<a class="' + valor.class + '" id=' + value.id + ' href="#"><i class="' + valor.icon + ' icon-white"></i> ' + valor.text + '</a>';
                                             });
                                             tabla += '<h5>'  + '</div></h5></td></tr>';
                                         } else {
@@ -383,8 +383,8 @@ var vista = function(objeto, ContextPath) {
                     if (value === "acciones") {
                         tabla += '</th>';
                     } else {
-                        tabla += '<a class="orderAsc' + index + '" href="#"><i class="icon-arrow-up"></i></a>';
-                        tabla += '<a class="orderDesc' + index + '" href="#"><i class="icon-arrow-down"></i></a>';
+                        tabla += '<a class="orderAsc' + index + '" href="#"><i class="icon-arrow-up icon-white"></i></a>';
+                        tabla += '<a class="orderDesc' + index + '" href="#"><i class="icon-arrow-down icon-white"></i></a>';
                         tabla += '</th>';
                     }
 
@@ -418,10 +418,10 @@ var vista = function(objeto, ContextPath) {
                         } else {
                             switch (value[valor]) {
                                 case true:
-                                    tabla += '<td><i class="icon-ok"></i></td>';
+                                    tabla += '<td><i class="icon-ok icon-white"></i></td>';
                                     break;
                                 case false:
-                                    tabla += '<td><i class="icon-remove"></i></td>';
+                                    tabla += '<td><i class="icon-remove icon-white"></i></td>';
                                     break;
                                 default:
                                     tabla += '<td>' + value[valor] + '</td>';
@@ -431,7 +431,7 @@ var vista = function(objeto, ContextPath) {
                     tabla += '<td><div class="btn-toolbar"><div class="btn-group">';
 
                     $.each(botonera, function(indice, valor) {
-                        tabla += '<a class="' + valor.class + '" id=' + value.id + ' href="#"><i class="' + valor.icon + '"></i> ' + valor.text + '</a>';
+                        tabla += '<a class="' + valor.class + '" id=' + value.id + ' href="#"><i class="' + valor.icon + ' icon-white"></i> ' + valor.text + '</a>';
                     });
                     tabla += '</div></div></td>';
                     tabla += '</tr>';
@@ -471,10 +471,10 @@ var vista = function(objeto, ContextPath) {
                 } else {
                     switch (datos[valor]) {
                         case true:
-                            tabla += '<i class="icon-ok"></i>';
+                            tabla += '<i class="icon-ok icon-white"></i>';
                             break;
                         case false:
-                            tabla += '<i class="icon-remove"></i>';
+                            tabla += '<i class="icon-remove icon-white"></i>';
                             break;
                         default:
                             tabla += datos[valor];

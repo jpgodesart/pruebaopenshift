@@ -116,6 +116,7 @@
         <script src="js/control/tarea.js" charset="UTF-8"></script>
         <script src="js/control/usupro.js" charset="UTF-8"></script>
         <script src="js/control/usutarea.js" charset="UTF-8"></script>
+        <script src="js/control/usuproyec.js" charset="UTF-8"></script>
 
         <script>
 

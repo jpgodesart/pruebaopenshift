@@ -1,9 +1,7 @@
-
-
-var control_tarea_list = function(path) {
+var control_usuproyec_list= function(path) {
     //contexto privado
 
-    var prefijo_div = "#tarea_list ";
+    var prefijo_div = "#usuproyec_list ";
 
     function cargaBotoneraMantenimiento() {
         var botonera = [
@@ -218,9 +216,9 @@ var control_tarea_list = function(path) {
             //muestra el listado principal
 
             if (callback) {
-                $(prefijo_div + "#datos").empty().append(view.getLoading()).html(view.getPageTableTarea(pag, order, ordervalue, rpp, filter, filteroperator, filtervalue, systemfilter, systemfilteroperator, systemfiltervalue, cargaBotoneraBuscando()));
+                $(prefijo_div + "#datos").empty().append(view.getLoading()).html(view.getPageTable(pag, order, ordervalue, rpp, filter, filteroperator, filtervalue, systemfilter, systemfilteroperator, systemfiltervalue, cargaBotoneraBuscando()));
             } else {
-                $(prefijo_div + "#datos").empty().append(view.getLoading()).html(view.getPageTableTarea(pag, order, ordervalue, rpp, filter, filteroperator, filtervalue, systemfilter, systemfilteroperator, systemfiltervalue, cargaBotoneraMantenimiento()));
+                $(prefijo_div + "#datos").empty().append(view.getLoading()).html(view.getPageTable(pag, order, ordervalue, rpp, filter, filteroperator, filtervalue, systemfilter, systemfilteroperator, systemfiltervalue, cargaBotoneraMantenimiento()));
             }
             
             //LISTADO USUARIOS
@@ -351,5 +349,8 @@ var control_tarea_list = function(path) {
         }
     };
 };
+
+
+
 
 

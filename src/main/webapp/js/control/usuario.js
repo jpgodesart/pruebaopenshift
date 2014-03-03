@@ -21,7 +21,7 @@ var control_usuario_list = function(path) {
 
     function cargaBotoneraBuscando() {
         var botonera = [
-            {"class": "btn btn-mini action01", "icon": "icon-ok", "text": ""}
+            {"class": "btn btn-mini action01", "icon": "icon-ok icon-white", "text": ""}
         ];
         return botonera;
     }

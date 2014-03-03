@@ -15,14 +15,14 @@ var control_proyecto_list = function(path) {
             {"class": "btn btn-mini action02", "icon": "icon-zoom-in icon-white", "text": ""},
             {"class": "btn btn-mini action03", "icon": "icon-pencil icon-white", "text": ""},
             {"class": "btn btn-mini action04", "icon": "icon-remove icon-white", "text": ""},
-            {"class": "btn btn-mini action06", "icon": "", "text": "Usuarios del Proyecto"}
+            {"class": "btn btn-mini action06", "icon": "", "text": "Usuarios"}
         ];
         return botonera;
     }
 
     function cargaBotoneraBuscando() {
         var botonera = [
-            {"class": "btn btn-mini action01", "icon": "icon-ok", "text": ""}
+            {"class": "btn btn-mini action01", "icon": "icon-ok icon-white", "text": ""}
         ];
         return botonera;
     }
@@ -156,15 +156,15 @@ var control_proyecto_list = function(path) {
     
     /****************** USUARIOS DE PROYECTO *********************************/
     
-        function cargaUsu(id) {
+        function cargaUsuproyec(id) {
 
-        var usu = objeto('tarea', path);
+        var usuproyec = objeto('tarea', path);
         var usuView = vista(usu, path);
 
         $('#indexContenidoJsp').empty();
         $('#indexContenido').empty().append(usuView.getEmptyList());
 
-        var usuControl = control_tarea_list(path);
+        var usuControl = control_usuproyec_list(path);
         usuControl.inicia(usuView, 1, null, null, 10, null, null, null, null, "id_proyecto", "equals", id);
         return false;
 

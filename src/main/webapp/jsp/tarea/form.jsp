@@ -35,7 +35,7 @@
         <div class="controls">           
             <input readonly="true" id="id_estado" class="input-mini"
                    name="id_estado" type="text" size="5" maxlength="5" />  
-            <a class="btn btn-mini" id="id_estado_button" href="#"><i class="icon-search"></i></a>
+            <a class="btn btn-mini" id="id_estado_button" href="#"><i class="icon-search icon-white"></i></a>
         </div>
     </div>
     <div class="control-group">
@@ -49,7 +49,7 @@
         <div class="controls">           
             <input readonly="true" id="id_proyecto" class="input-mini"
                    name="id_proyecto" type="text" size="5" maxlength="5" />  
-            <a class="btn btn-mini" id="id_proyecto_button" href="#"><i class="icon-search"></i></a>
+            <a class="btn btn-mini" id="id_proyecto_button" href="#"><i class="icon-search icon-white"></i></a>
         </div>
     </div>
     <div class="control-group">
@@ -63,7 +63,7 @@
         <div class="controls">           
             <input readonly="true" id="id_usuario" class="input-mini"
                    name="id_usuario" type="text" size="5" maxlength="5" />  
-            <a class="btn btn-mini" id="id_usuario_button" href="#"><i class="icon-search"></i></a>
+            <a class="btn btn-mini" id="id_usuario_button" href="#"><i class="icon-search icon-white"></i></a>
         </div>
     </div>
     <div class="control-group">
