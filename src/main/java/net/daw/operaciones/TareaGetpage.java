@@ -13,6 +13,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import net.daw.bean.TareaBean;
+import net.daw.bean.UsuarioBean;
 import net.daw.dao.TareaDao;
 import net.daw.helper.Conexion;
 import net.daw.helper.FilterBean;
@@ -25,6 +26,15 @@ public class TareaGetpage implements GenericOperation {
     
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws Exception {
+        
+        UsuarioBean oUsuarioBean = (UsuarioBean) request.getSession().getAttribute("usuarioBean");
+        String idUserSesion = oUsuarioBean.getId().toString();
+        
+        
+        request.setAttribute("systemfilter","id_usuario");
+        request.setAttribute("systemfilteroperator","equals");
+        request.setAttribute("systemfiltervalue",idUserSesion);
+        
         String data;
         try {
             int rpp;
@@ -53,13 +63,25 @@ public class TareaGetpage implements GenericOperation {
                     }
                 }
             }
-            if (request.getParameter("systemfilter") != null) {
+            /*if (request.getParameter("systemfilter") != null) {
                 if (request.getParameter("systemfilteroperator") != null) {
                     if (request.getParameter("systemfiltervalue") != null) {
                         FilterBean oFilterBean = new FilterBean();
                         oFilterBean.setFilter(request.getParameter("systemfilter"));
                         oFilterBean.setFilterOperator(request.getParameter("systemfilteroperator"));
                         oFilterBean.setFilterValue(request.getParameter("systemfiltervalue"));
+                        oFilterBean.setFilterOrigin("system");
+                        alFilter.add(oFilterBean);
+                    }
+                }
+            }*/
+            if (request.getAttribute("systemfilter") != null) {
+                if (request.getAttribute("systemfilteroperator") != null) {
+                    if (request.getAttribute("systemfiltervalue") != null) {
+                        FilterBean oFilterBean = new FilterBean();
+                        oFilterBean.setFilter((String) request.getAttribute("systemfilter"));
+                        oFilterBean.setFilterOperator((String) request.getAttribute("systemfilteroperator"));
+                        oFilterBean.setFilterValue((String) request.getAttribute("systemfiltervalue"));
                         oFilterBean.setFilterOrigin("system");
                         alFilter.add(oFilterBean);
                     }

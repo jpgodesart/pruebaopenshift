@@ -10,6 +10,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import net.daw.bean.TareaBean;
+import net.daw.bean.UsuarioBean;
 import net.daw.dao.TareaDao;
 import net.daw.helper.Conexion;
 
@@ -21,6 +22,10 @@ public class TareaGet implements GenericOperation {
  
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws Exception {
+           
+        
+        
+        
         String data;         
         try {            
             if (request.getParameter("id") == null) {

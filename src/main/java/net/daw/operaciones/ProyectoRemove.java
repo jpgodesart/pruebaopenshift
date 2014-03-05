@@ -23,7 +23,8 @@ public class ProyectoRemove implements GenericOperation {
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws Exception {
 
-                UsuarioBean oUsuarioBean;
+        Map<String, String> data = new HashMap<>();
+        UsuarioBean oUsuarioBean;
         oUsuarioBean = (UsuarioBean) request.getSession().getAttribute("usuarioBean");
         java.lang.Enum tipoUsuario = oUsuarioBean.getTipoUsuario();
         //
@@ -36,9 +37,6 @@ public class ProyectoRemove implements GenericOperation {
 
             
             oProyecto.setId(Integer.parseInt(request.getParameter("id")));            
-            Map<String, String> data = new HashMap<>();
-            
-       
             
             if (oProyecto != null) {
                 oProyectoDAO.remove(oProyecto);
@@ -56,7 +54,11 @@ public class ProyectoRemove implements GenericOperation {
         }
         
         }else{
-            return "alert(\"No eres profesor\");";
+            data.put("status", "error");
+            data.put("message", "No tienes permisos");
+            Gson gson = new Gson();
+            String resultado = gson.toJson(data);
+            return resultado;
         }
     }
 }
