@@ -30,10 +30,15 @@ public class TareaGetpage implements GenericOperation {
         UsuarioBean oUsuarioBean = (UsuarioBean) request.getSession().getAttribute("usuarioBean");
         String idUserSesion = oUsuarioBean.getId().toString();
         
+        java.lang.Enum tipoUsuario = oUsuarioBean.getTipoUsuario();
+        //
+        if (tipoUsuario.equals(net.daw.helper.Enum.TipoUsuario.Alumno)) {
+        
         
         request.setAttribute("systemfilter","id_usuario");
         request.setAttribute("systemfilteroperator","equals");
         request.setAttribute("systemfiltervalue",idUserSesion);
+        }
         
         String data;
         try {
@@ -62,8 +67,8 @@ public class TareaGetpage implements GenericOperation {
                         alFilter.add(oFilterBean);
                     }
                 }
-            }
-            /*if (request.getParameter("systemfilter") != null) {
+            }/////
+            if (request.getParameter("systemfilter") != null) {
                 if (request.getParameter("systemfilteroperator") != null) {
                     if (request.getParameter("systemfiltervalue") != null) {
                         FilterBean oFilterBean = new FilterBean();
@@ -74,7 +79,7 @@ public class TareaGetpage implements GenericOperation {
                         alFilter.add(oFilterBean);
                     }
                 }
-            }*/
+            }////
             if (request.getAttribute("systemfilter") != null) {
                 if (request.getAttribute("systemfilteroperator") != null) {
                     if (request.getAttribute("systemfiltervalue") != null) {
