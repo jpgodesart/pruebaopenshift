@@ -14,10 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 import net.daw.dao.ProyectoDao;
 import net.daw.helper.Conexion;
 
-/**
- *
- * @author rafa
- */
+
 public class ProyectoGetcolumns implements GenericOperation {
 
     @Override

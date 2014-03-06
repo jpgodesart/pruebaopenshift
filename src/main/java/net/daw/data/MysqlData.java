@@ -3,7 +3,7 @@ package net.daw.data;
 /**
  * Clase Mysql para acceder a bases de datos Mysql. Nivel data.
  *
- * @author rafael aznar
+ * 
  */
 import java.sql.Connection;
 import java.sql.ResultSet;

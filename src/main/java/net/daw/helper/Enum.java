@@ -1,9 +1,6 @@
 package net.daw.helper;
 
-/**
- *
- * @author Jose
- */
+
 
 public class Enum {
     

@@ -14,10 +14,7 @@ import net.daw.dao.UsuarioDao;
 import net.daw.helper.Conexion;
 
 
-/**
- *
- * @author Alvaro
- */
+
 public class UsuarioGetcolumns implements GenericOperation {
 
     @Override

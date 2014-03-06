@@ -2,7 +2,7 @@
 <%-- 
     Document   : infologin
     Created on : Jan 19, 2013, 9:28:49 AM
-    Author     : rafa
+    
 --%>
 <%@page import="net.daw.bean.UsuarioBean"%>
 <%UsuarioBean user = (UsuarioBean) request.getSession().getAttribute("usuarioBean");%>                   

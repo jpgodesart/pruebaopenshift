@@ -4,10 +4,7 @@
  */
 package net.daw.bean;
 
-/**
- *
- * @author rafa
- */
+
 public class UsuarioBean {
 
     private Integer id = 0;

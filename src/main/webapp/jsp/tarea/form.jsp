@@ -1,7 +1,7 @@
 <%-- 
     Document   : form
     Created on : 29-ene-2014, 12:11:54
-    Author     : al037684
+   
 --%>
 
 <%@page import="java.text.SimpleDateFormat"%>

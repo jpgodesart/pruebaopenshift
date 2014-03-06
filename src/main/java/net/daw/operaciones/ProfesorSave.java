@@ -17,10 +17,7 @@ import net.daw.dao.ProfesorDao;
 import net.daw.helper.Conexion;
 import net.daw.helper.EncodingUtil;
 
-/**
- *
- * @author Pedro Benito
- */
+
 public class ProfesorSave implements GenericOperation {
 
     @Override

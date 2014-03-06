@@ -12,10 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import net.daw.dao.TareaDao;
 import net.daw.helper.Conexion;
 
-/**
- *
- * @author al037684
- */
+
 public class TareaGetcolumns implements GenericOperation {
  
     @Override

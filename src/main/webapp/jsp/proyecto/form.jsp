@@ -1,7 +1,7 @@
 <%-- 
     Document   : form
     Created on : 25-feb-2014, 19:02:06
-    Author     : Win7
+    
 --%>
 
 <form class="form-horizontal" action="#" id="formulario" name="formulario">

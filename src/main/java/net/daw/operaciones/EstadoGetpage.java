@@ -17,10 +17,7 @@ import net.daw.helper.Conexion;
 import net.daw.helper.FilterBean;
 
 
-/**
- *
- * @author Diana Ortega
- */
+
 public class EstadoGetpage implements GenericOperation {
 
     @Override

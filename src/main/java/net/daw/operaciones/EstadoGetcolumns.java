@@ -14,10 +14,7 @@ import net.daw.dao.EstadoDao;
 import net.daw.helper.Conexion;
 
 
-/**
- *
- * @author Diana Ortega
- */
+
 public class EstadoGetcolumns implements GenericOperation {
 
     @Override

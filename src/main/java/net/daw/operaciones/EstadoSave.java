@@ -17,10 +17,7 @@ import net.daw.helper.EncodingUtil;
 
 
 
-/**
- *
- * @author Diana Ortega
- */
+
 public class EstadoSave implements GenericOperation {
 
     @Override

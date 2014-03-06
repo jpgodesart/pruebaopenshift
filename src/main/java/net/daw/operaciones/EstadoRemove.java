@@ -16,10 +16,7 @@ import net.daw.helper.Conexion;
 
 
 
-/**
- *
- * @author Diana Ortega
- */
+
 public class EstadoRemove implements GenericOperation {
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws Exception {

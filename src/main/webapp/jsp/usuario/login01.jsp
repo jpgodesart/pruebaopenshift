@@ -1,7 +1,7 @@
 <%-- 
     Document   : login
     Created on : Jan 15, 2013, 11:54:03 AM
-    Author     : rafa
+   
 --%>
 
 <form id="loginForm" action="jsp" class="form-horizontal" method="post">

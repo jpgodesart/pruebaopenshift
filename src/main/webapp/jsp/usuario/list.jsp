@@ -1,7 +1,7 @@
 <%-- 
     Document   : list.jsp
     Created on : Jan 16, 2013, 12:57:09 PM
-    Author     : Jose
+    
 --%>
 <%@page import="net.daw.helper.Conexion"%>
 <%@page import="net.daw.dao.UsuarioDao"%>

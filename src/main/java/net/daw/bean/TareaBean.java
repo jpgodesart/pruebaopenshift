@@ -6,10 +6,7 @@ package net.daw.bean;
 
 import java.util.Date;
 
-/**
- *
- * @author al037684
- */
+
 public class TareaBean {
     
     private Integer id = 0;

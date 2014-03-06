@@ -18,10 +18,7 @@ import net.daw.dao.TareaDao;
 import net.daw.helper.Conexion;
 import net.daw.helper.FilterBean;
 
-/**
- *
- * @author al037684
- */
+
 public class TareaGetpage implements GenericOperation {
     
     @Override

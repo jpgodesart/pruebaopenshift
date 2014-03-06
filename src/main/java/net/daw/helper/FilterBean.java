@@ -1,9 +1,6 @@
 package net.daw.helper;
 
-/**
- *
- * @author rafa
- */
+
 public class FilterBean {
 
     private String filter;

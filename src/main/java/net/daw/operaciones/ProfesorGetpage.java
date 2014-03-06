@@ -17,10 +17,7 @@ import net.daw.dao.ProfesorDao;
 import net.daw.helper.Conexion;
 import net.daw.helper.FilterBean;
 
-/**
- *
- * @author Pedro Benito
- */
+
 public class ProfesorGetpage implements GenericOperation {
 
     @Override

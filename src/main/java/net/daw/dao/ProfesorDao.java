@@ -11,10 +11,7 @@ import net.daw.bean.ProfesorBean;
 import net.daw.bean.UsuarioBean;
 import net.daw.helper.Conexion;
 
-/**
- *
- * @author Pedro Benito
- */
+
 public class ProfesorDao extends GenericDaoImplementation<ProfesorBean>{
     
     public ProfesorDao(Conexion.Tipo_conexion tipo_conexion) throws Exception{

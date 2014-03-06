@@ -7,10 +7,7 @@ package net.daw.dao;
 import net.daw.bean.EstadoBean;
 import net.daw.helper.Conexion;
 
-/**
- *
- * @author Diana Ortega
- */
+
 public class EstadoDao extends GenericDaoImplementation<EstadoBean> {
     
      public EstadoDao(Conexion.Tipo_conexion tipoConexion) throws Exception {

@@ -10,10 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-/**
- *
- * @author al037684
- */
+
 public class TareaGetprettycolumns implements GenericOperation {
 
     @Override

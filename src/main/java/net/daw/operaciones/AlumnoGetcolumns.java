@@ -14,10 +14,7 @@ import net.daw.dao.AlumnoDao;
 import net.daw.helper.Conexion;
 
 
-/**
- *
- * @author rafa
- */
+
 public class AlumnoGetcolumns implements GenericOperation {
 
     @Override

@@ -12,10 +12,7 @@ import java.text.CharacterIterator;
 import java.text.StringCharacterIterator;
 import javax.servlet.ServletException;
 
-/**
- *
- * @author Alvaro
- */
+
 public class TextParser {
 
     /**

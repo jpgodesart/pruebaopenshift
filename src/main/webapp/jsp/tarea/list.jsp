@@ -1,7 +1,7 @@
 <%-- 
     Document   : list
     Created on : 29-ene-2014, 12:26:53
-    Author     : al037684
+    
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

@@ -17,10 +17,7 @@ import net.daw.dao.AlumnoDao;
 import net.daw.helper.Conexion;
 import net.daw.helper.FilterBean;
 
-/**
- *
- * @author rafa
- */
+
 public class AlumnoGetpage implements GenericOperation {
 
     @Override

@@ -1,7 +1,7 @@
 <%-- 
     Document   : menu02
     Created on : Jan 18, 2013, 12:30:02 PM
-    Author     : rafa
+   
 --%>
 
 <div class="well sidebar-nav">

@@ -1,7 +1,7 @@
 <%-- 
     Document   : form
     Created on : 20-ene-2014, 11:23:24
-    Author     : Diana Ortega
+    
 --%>
 
 <form class="form-horizontal" action="#" id="formulario" name="formulario">

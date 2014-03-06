@@ -7,10 +7,7 @@ package net.daw.helper;
 
 import javax.servlet.ServletException;
 
-/**
- *
- * @author Alvaro
- */
+
 public class ParserConverter {
 
     /**

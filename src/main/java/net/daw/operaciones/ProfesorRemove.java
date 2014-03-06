@@ -17,10 +17,7 @@ import net.daw.helper.Conexion;
 
 
 
-/**
- *
- * @author Pedro Benito
- */
+
 public class ProfesorRemove implements GenericOperation {
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws Exception {

@@ -9,10 +9,7 @@ import java.util.HashMap;
 import net.daw.helper.Conexion;
 import net.daw.helper.FilterBean;
 
-/**
- *
- * @author rafa
- */
+
 public interface GenericData {
 
     public void conexion(Conexion.Tipo_conexion tipo) throws Exception;

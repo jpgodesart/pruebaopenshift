@@ -10,10 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-/**
- *
- * @author Alvaro
- */
+
 public class UsuarioGetprettycolumns implements GenericOperation {
 
     @Override

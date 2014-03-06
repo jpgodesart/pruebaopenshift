@@ -14,10 +14,7 @@ import net.daw.helper.Conexion;
 import net.daw.helper.FilterBean;
 
 
-/**
- *
- * @author rafa
- */
+
 public class ProyectoGetpages implements GenericOperation {
 
     @Override

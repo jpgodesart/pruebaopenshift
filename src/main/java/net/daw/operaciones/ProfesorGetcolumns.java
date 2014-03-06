@@ -14,10 +14,7 @@ import net.daw.dao.ProfesorDao;
 import net.daw.helper.Conexion;
 
 
-/**
- *
- * @author Pedro Benito
- */
+
 public class ProfesorGetcolumns implements GenericOperation {
 
     @Override

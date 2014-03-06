@@ -4,10 +4,7 @@
  */
 package net.daw.operaciones;
 
-/**
- *
- * @author Pedro Benito
- */
+
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;

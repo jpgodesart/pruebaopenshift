@@ -13,10 +13,7 @@ import net.daw.helper.Conexion;
 import net.daw.helper.FilterBean;
 
 
-/**
- *
- * @author al037684
- */
+
 public class TareaGetregisters implements GenericOperation {
 
     @Override

@@ -18,7 +18,7 @@ import java.text.SimpleDateFormat;
 
 /**
  *
- * @author rafa
+ * 
  * @param <TIPO_OBJETO>
  *
  */

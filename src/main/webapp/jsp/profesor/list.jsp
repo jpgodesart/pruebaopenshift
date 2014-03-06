@@ -1,6 +1,6 @@
 <%-- 
     Document   : list.jsp
-    Author     : Pedro Benito
+   
 --%>
 <%@page import="net.daw.helper.Conexion"%>
 <%@page import="net.daw.dao.ProfesorDao"%>

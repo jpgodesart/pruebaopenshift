@@ -1,6 +1,6 @@
 <%-- 
     Document   : form
-    Author     : Pedro Benito
+    
 --%>
 <form class="form-horizontal" action="#" id="formulario" name="formulario">
     <h2>Entrada</h2>

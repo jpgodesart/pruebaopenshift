@@ -5,10 +5,7 @@
  */
 package net.daw.bean;
 
-/**
- *
- * @author Sergio
- */
+
 public class AlumnoBean {
 
     private Integer id = 0;

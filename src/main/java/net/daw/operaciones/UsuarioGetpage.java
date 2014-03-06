@@ -17,10 +17,7 @@ import net.daw.helper.Conexion;
 import net.daw.helper.FilterBean;
 
 
-/**
- *
- * @author Alvaro
- */
+
 public class UsuarioGetpage implements GenericOperation {
 
     @Override

@@ -5,10 +5,7 @@
  */
 package net.daw.bean;
 
-/**
- *
- * @author Pedro Benito
- */
+
 public class ProfesorBean {
 
     private Integer id = 0;

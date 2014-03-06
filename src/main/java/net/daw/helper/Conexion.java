@@ -5,10 +5,7 @@
  */
 package net.daw.helper;
 
-/**
- *
- * @author rafa
- */
+
 public class Conexion {
 
     public static enum Tipo_conexion {

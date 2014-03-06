@@ -10,10 +10,7 @@ import net.daw.bean.UsuarioBean;
 import net.daw.helper.Conexion;
 import net.daw.helper.Enum;
 
-/**
- *
- * @author rafa
- */
+
 public class UsuarioDao extends GenericDaoImplementation<UsuarioBean> {
 
     public UsuarioDao(Conexion.Tipo_conexion tipoConexion) throws Exception {

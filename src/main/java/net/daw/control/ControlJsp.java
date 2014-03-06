@@ -15,10 +15,7 @@ import net.daw.bean.UsuarioBean;
 import net.daw.dao.UsuarioDao;
 import net.daw.helper.Conexion;
 
-/**
- *
- * @author rafa
- */
+
 public class ControlJsp extends HttpServlet {
 
     private static final long serialVersionUID = 1L;

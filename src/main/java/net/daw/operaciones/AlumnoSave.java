@@ -16,10 +16,7 @@ import net.daw.dao.AlumnoDao;
 import net.daw.helper.Conexion;
 import net.daw.helper.EncodingUtil;
 
-/**
- *
- * @author rafa
- */
+
 public class AlumnoSave implements GenericOperation {
 
     @Override

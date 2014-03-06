@@ -1,7 +1,7 @@
 <%-- 
     Document   : list
     Created on : 20-ene-2014, 11:25:40
-    Author     : Diana Ortega
+    
 --%>
 
 <%@page import="net.daw.helper.Conexion"%>

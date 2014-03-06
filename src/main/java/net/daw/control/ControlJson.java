@@ -16,10 +16,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import net.daw.operaciones.GenericOperation;
 
-/**
- *
- * @author rafa
- */
+
 public class ControlJson extends HttpServlet {
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)

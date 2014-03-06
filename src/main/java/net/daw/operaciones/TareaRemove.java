@@ -14,10 +14,7 @@ import net.daw.bean.TareaBean;
 import net.daw.dao.TareaDao;
 import net.daw.helper.Conexion;
 
-/**
- *
- * @author al037684
- */
+
 public class TareaRemove implements GenericOperation {
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws Exception {

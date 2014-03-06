@@ -1,7 +1,7 @@
 <%-- 
     Document   : list
     Created on : 25-feb-2014, 19:18:11
-    Author     : Win7
+    
 --%>
 <%@page import="net.daw.dao.ProyectoDao"%>
 <%@page import="net.daw.dao.GenericDaoImplementation"%>

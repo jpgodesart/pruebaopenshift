@@ -17,10 +17,7 @@ import net.daw.helper.Conexion;
 import net.daw.helper.EncodingUtil;
 
 
-/**
- *
- * @author al037684
- */
+
 public class TareaSave implements GenericOperation {
 
     @Override

@@ -13,10 +13,7 @@ import net.daw.helper.Conexion;
 import net.daw.helper.FilterBean;
 
 
-/**
- *
- * @author Pedro Benito
- */
+
 public class ProfesorGetregisters implements GenericOperation {
 
     @Override

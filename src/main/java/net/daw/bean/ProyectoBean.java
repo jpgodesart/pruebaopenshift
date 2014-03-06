@@ -6,10 +6,7 @@ package net.daw.bean;
 
 import java.util.Date;
 
-/**
- *
- * @author al037914
- */
+
 public class ProyectoBean {
     
     private Integer id = 0;
