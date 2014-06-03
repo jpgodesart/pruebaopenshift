@@ -38,8 +38,8 @@
 }
 
 .tablatareas1,.tablatareas2,.tablatareas3,.tablatareas4{
-    width: 30%;
-    margin-left: 5%;
+    width: 20%;
+    margin-left: 4%;
     margin-bottom: 5%;
     text-align: justify;
     float: left;
@@ -49,18 +49,63 @@
     border: 5px solid #d9d9d9;
     
 }
+.tablatareas1:after {
+    background: #d9d9d9;
+    color: #000000;
+    content: attr(data-tablatareas1);
+    display: block;
+    float: right;
+    font-size: 13px;
+    line-height: 1;
+    position: relative;
+}
 .tablatareas2{
     border: 5px solid #c4e3f3;
     
 }
+
+.tablatareas2:after {
+    background: #c4e3f3;
+    color: #000000;
+    content: attr(data-tablatareas2);
+    display: block;
+    float: right;
+    font-size: 13px;
+    line-height: 1;
+    position: relative;
+}
+
 .tablatareas3{
     border: 5px solid khaki;
     
 }
+
+.tablatareas3:after {
+    background: khaki;
+    color: #000000;
+    content: attr(data-tablatareas3);
+    display: block;
+    float: right;
+    font-size: 13px;
+    line-height: 1;
+    position: relative;
+} *
 .tablatareas4{
     border: 5px solid #7aba7b;
     
 }
+
+.tablatareas4:after {
+    background: #7aba7b;
+    color: #000000;
+    content: attr(data-tablatareas4);
+    display: block;
+    float: right;
+    font-size: 13px;
+    line-height: 1;
+    position: relative;
+}
+
 .tablatareas1 tr:first-child{
     background: #d9d9d9;
     
@@ -126,7 +171,7 @@ body * {
 }
 #btntarea{
     float: right;
-    width: 30%;
+    width: 25%;
     position: relative;
     
 }

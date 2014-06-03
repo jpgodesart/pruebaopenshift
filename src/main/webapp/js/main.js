@@ -297,16 +297,16 @@ var vista = function(objeto, ContextPath) {
                     $.each(objeto.getFieldNames(), function(index, valor) {
                         if (valor === "id_estado") {
                             if (value[valor] == 1) {
-                                tabla += "<table class=\"tablatareas1\">";
+                                tabla += "<table class=\"tablatareas1\" data-tablatareas1=\"Asignada\">";
                             }
                             if (value[valor] == 2) {
-                                tabla += "<table class=\"tablatareas2\">";
+                                tabla += "<table class=\"tablatareas2\" data-tablatareas2=\"En proceso\">";
                             }
                             if (value[valor] == 3) {
-                                tabla += "<table class=\"tablatareas3\">";
+                                tabla += "<table class=\"tablatareas3\" data-tablatareas3=\"Terminada\">";
                             }
                             if (value[valor] == 4) {
-                                tabla += "<table class=\"tablatareas4\">";
+                                tabla += "<table class=\"tablatareas4\" data-tablatareas4=\"Cerrada\">";
                             }
 
                         }

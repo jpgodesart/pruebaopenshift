@@ -156,20 +156,32 @@ var control_proyecto_list = function(path) {
     
     /****************** USUARIOS DE PROYECTO *********************************/
     
-        function cargaUsuproyec(id) {
+      /*  function cargaUsuproyec(id) {
 
-        var usuproyec = objeto('tarea', path);
-        var usuView = vista(usu, path);
+        var usuario = objeto('usuario', path);
+        var usuarioView = vista(usuario, path);
 
         $('#indexContenidoJsp').empty();
-        $('#indexContenido').empty().append(usuView.getEmptyList());
+        $('#indexContenido').empty().append(usuarioView.getEmptyList());
 
-        var usuControl = control_usuproyec_list(path);
-        usuControl.inicia(usuView, 1, null, null, 10, null, null, null, null, "id_proyecto", "equals", id);
+        var usuarioControl = control_usuario_list(path);
+        usuarioControl.inicia(usuarioView, 1, null, null, 10, null, null, null, null, "id_proyecto", "equals", id);
+        return false;
+
+    }*/
+        function cargaUsuproyec(id) {
+
+        var tarea = objeto('tarea', path);
+        var tareaView = vista(tarea, path);
+
+        $('#indexContenidoJsp').empty();
+        $('#indexContenido').empty().append(tareaView.getEmptyList());
+
+        var tareaControl = control_tareausu_list(path);
+        tareaControl.inicia(tareaView, 1, null, null, 10, null, null, null, null, "id_proyecto", "equals", id);
         return false;
 
     }
-    
     
     /**************************************************************************/
     
@@ -249,7 +261,7 @@ var control_proyecto_list = function(path) {
                 });
                 $(prefijo_div + '.btn.btn-mini.action06').unbind('click');
                 $(prefijo_div + '.btn.btn-mini.action06').click(function() {
-                    cargaUsu($(this).attr('id'));
+                    cargaUsuproyec($(this).attr('id'));
                     
                 });
 

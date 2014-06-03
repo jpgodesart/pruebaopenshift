@@ -70,7 +70,7 @@
                 %>
                 <%
                     if (user != null) {
-                        out.print("<div class=\"span10\">");
+                        out.print("<div class=\"span12\">");
                         out.print("<div id=\"indexContenido\"></div>");
                     } else {
                         out.print("<div class=\"span12\">");
