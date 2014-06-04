@@ -294,7 +294,7 @@ var vista = function(objeto, ContextPath) {
 
                 $.each(page, function(index, value) {
                     //tabla += '<tr>';
-                    $.each(objeto.getFieldNames(), function(index, valor) {
+                    $.each(objeto.getFieldNames(), function(index, valor) {                      
                         if (valor === "id_estado") {
                             if (value[valor] == 1) {
                                 tabla += "<table class=\"tablatareas1\" data-tablatareas1=\"Asignada\">";
@@ -312,7 +312,6 @@ var vista = function(objeto, ContextPath) {
                         }
 
                     });
-
                     $.each(objeto.getFieldNames(), function(index, valor) {
 
                         if (/id_/.test(valor)) {

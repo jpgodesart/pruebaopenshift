@@ -83,7 +83,7 @@
                     out.print("</div>");
                 %>    
                 <div class="row-fluid">
-                    <div class="span12"><hr><footer><p>&copy; Juan Pérez (2014)</p></footer></div>   
+                    <div id="pie" class="span12"><hr><footer><p>&copy; Juan Pérez (2014)</p></footer></div>   
                 </div>
             </div>
         </div>                    

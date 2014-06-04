@@ -205,3 +205,6 @@ body * {
     text-align: center;
     box-shadow: 10px 10px 5px #888888;
 }
+#tarea_list  div.span12 div.row-fluid div.span7 h2,#alumno_list div.span12 div.row-fluid div.span7 h2,#profesor_list div.span12 div.row-fluid div.span7 h2,#proyecto_list div.span12 div.row-fluid div.span7 h2{
+    text-transform: capitalize;
+}
