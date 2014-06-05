@@ -19,15 +19,15 @@ public class Conexion {
     }
 
     public static String getDatabaseName() {
-        return "gestiontareas";
+        return "jpgodesart";
     }
 
     public static String getDatabaseLogin() {
-        return "root";
+        return "adminbrx2Jzn";
     }
 
     public static String getDatabasePassword() {
-        return "bitnami";
+        return "v26pWZWz-_mk";
     }
 
     public static String getDatabasePort() {
@@ -35,6 +35,6 @@ public class Conexion {
     }
 
     public static String getDatabaseHost() {
-        return "localhost:81";
+        return "127.4.202.2";
     }
 }

@@ -19,8 +19,8 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `gestiontareas`
 --
-CREATE DATABASE IF NOT EXISTS `gestiontareas` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `gestiontareas`;
+CREATE DATABASE IF NOT EXISTS `jpgodesart` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `jpgodesart`;
 
 -- --------------------------------------------------------
 
