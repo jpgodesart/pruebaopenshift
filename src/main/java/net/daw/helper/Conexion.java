@@ -23,11 +23,11 @@ public class Conexion {
     }
 
     public static String getDatabaseLogin() {
-        return "adminbrx2Jzn";
+        return "adminarRGKBg";
     }
 
     public static String getDatabasePassword() {
-        return "v26pWZWz-_mk";
+        return "Qc7vW_NPJVFl";
     }
 
     public static String getDatabasePort() {
@@ -35,6 +35,6 @@ public class Conexion {
     }
 
     public static String getDatabaseHost() {
-        return "127.4.202.2";
+        return "127.6.167.130";
     }
 }
